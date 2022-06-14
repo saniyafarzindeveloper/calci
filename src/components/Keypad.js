@@ -20,7 +20,6 @@ export default function Keypad () {
     setRes("")
   }
 
-  
   return (
         <div className='keypad' >
         <button id='trigo' name='sin' onClick={click}>sin</button>
@@ -49,3 +48,5 @@ export default function Keypad () {
       </div>
   );
 }
+
+
