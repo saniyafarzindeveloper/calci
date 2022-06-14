@@ -34,6 +34,13 @@ export default function Keypad({ setter }) {
     </div>
   );
 
+
+
+
+
+
+
+
   // return (
   //       <div className='keypad' >
   //       <button id='trigo' name='sin' onClick={click}>sin</button>
@@ -61,6 +68,10 @@ export default function Keypad({ setter }) {
        
   //     </div>
   // );
+
+
+
+  
 }
 
 

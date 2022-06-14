@@ -1,3 +1,5 @@
+import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
+
 const btnMapper = [
     {
         content: "sin",
@@ -20,7 +22,7 @@ const btnMapper = [
         type: "all clear"
     },
     {
-        content: "Backspace",
+        content: <BackspaceOutlinedIcon />,
         type: "backspace"
     },
     {
