@@ -83,7 +83,7 @@ const btnMapper = [
     },
     {
         content: "0",
-        type: "digit"
+        type: "zero"
     },
     {
         content: ".",

@@ -1,7 +1,7 @@
 
 body{
     background-color:  #DAF0FF;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     
@@ -14,7 +14,7 @@ body{
 button{
     border-radius: 12px;
     width: 50px;
-    height: 50px;
+    /* height: 50px; */
     /* margin: 3px; */
     /* margin-top: 15%; */
     font-size: large;
@@ -86,47 +86,6 @@ input{
     font-weight: 400;
 }
 
-/* .equalto{
-font-size: xx-large;
-font-weight: 400;
-/* display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center; */
-/* height: 120px; */
-/* position:relative; */
-/* background: #1991FF;
-color: #B2DAFF;
-border: 1px solid #1991FF;
-grid-column: ; */
-/* height: 100px; */
-/* padding: 6px 4px 0px;
-gap: 10px;
-
-
-width: 62px;
-
-left: 280px;
-top: 622px;
-
-
-border-radius: 12px; 
-}*/
-
-/* .equalto{
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 4px 0px;
-    gap: 10px;
-    position: absolute;
-    width: 56px;
-    height: 138px;
-    left: 190px;
-    top: 357px;
-    background: #1991FF;
-    border-radius: 12px; } */
 
 .backspace{
     background-color:  #616161;
@@ -171,13 +130,12 @@ border-radius: 16px; */
     color: #B2DAFF;
     border: 1px solid #1991FF;
     font-weight: 400;
-    font-size: x-large;
-    /* display: flex;
-    flex-direction: column;
+    font-size: xx-large;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    /* position: relative; */
-    
+    text-align: center;
+    flex-direction: column;
+    grid-row-end: span 2;
 }
 
 /* #zero{
@@ -211,27 +169,29 @@ border-radius: 16px; */
     /* width: 115px; */
 }
 
-.container2{
+/* .container2{
     display: grid;
-    /* grid-template-rows: 2/4; */
+    grid-template-rows: 2/4;
     border-radius: 12px;
-    /* width: 50px;
-    height: 50px; */
-}
+    width: 50px;
+    height: 50px;
+} */
 
-.equalto{
-    display: flex;
-    flex-direction: column;
-    grid-row-end: span 2;
+/* .equalto{ */
     /* grid-row-end: -1; */
     /* height: 120px; */
     /* grid-row: 5 / span 2; */
     /* grid-column-end: -1; */
-}
+/* } */
 
-#zero{
+.zero{
     grid-column-end: span 2;
     width: 100%;
     display: block;
+    background-color: #303136;
+    color: #29A8FF;
+    border: 1px solid #303136;
+    font-weight: 500;
+    font-size: x-large;
 }
 
