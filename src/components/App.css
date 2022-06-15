@@ -46,7 +46,7 @@ input{
     background: black;
     margin: 0 auto;
     color: white;
-    border: 0px;
+    border: 1px solid black;
     font-size: 40px;
     font-weight: 700;
     text-align: right;

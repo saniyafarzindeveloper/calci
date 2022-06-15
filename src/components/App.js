@@ -12,7 +12,7 @@ export default function App() {
   const [btnClick, setbtnClick] = useState("");
 
   useEffect(() => {
-    if ("0123456789".includes(btnClick))
+    if ("0123456789.".includes(btnClick))
       setInputValue((prev) => prev + btnClick);
   }, [btnClick]);
 
