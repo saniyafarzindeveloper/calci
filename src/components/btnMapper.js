@@ -19,7 +19,7 @@ const btnMapper = [
     },
     {
         content: "AC",
-        type: "all clear"
+        type: "allclear"
     },
     {
         content: <BackspaceOutlinedIcon />,
@@ -43,7 +43,7 @@ const btnMapper = [
     },
     {
         content: "9",
-        type: "arithmetic"
+        type: "digit"
     },
     {
         content: "-",
@@ -51,11 +51,11 @@ const btnMapper = [
     },
     {
         content: "4",
-        type: "arithmetic"
+        type: "digit"
     },
     {
         content: "5",
-        type: "arithmetic"
+        type: "digit"
     },
     {
         content: "6",
@@ -63,7 +63,7 @@ const btnMapper = [
     },
     {
         content: "+",
-        type: "digit"
+        type: "arithmetic"
     },
     {
         content: "1",
@@ -87,7 +87,7 @@ const btnMapper = [
     },
     {
         content: ".",
-        type: "period"
+        type: "digit"
     },
   ];
   

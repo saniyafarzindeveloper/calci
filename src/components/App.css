@@ -1,3 +1,4 @@
+
 body{
     background-color:  #DAF0FF;
     display: flex;
@@ -60,7 +61,7 @@ input{
     margin: 5px;
 }
 
-#trigo{
+.trigo{
     width:80%;
     height: 50%;
     margin-top: 20px;
@@ -77,7 +78,7 @@ input{
     font-weight: 400;
 }
 
-#ari{
+.arithmetic{
     background-color:#005DB2;
     color: #339DFF;
     font-size:xx-large;
@@ -127,20 +128,20 @@ border-radius: 12px;
     background: #1991FF;
     border-radius: 12px; } */
 
-.del{
+.backspace{
     background-color:  #616161;
     color: #A5A5A5;
     border: 1px solid #616161;
 }
 
-.ac{
+.allclear{
     background-color: #616161;
     border: 1px solid #616161 ;
     color: #A5A5A5;
     font-weight: 400;
 }
 
-.dig{
+.digit{
     background-color: #303136;
     color: #29A8FF;
     border: 1px solid #303136;
@@ -165,7 +166,7 @@ top: 420px;
 background: #303136;
 border-radius: 16px; */
 
-.equalto{
+.equal{
     background: #1991FF;
     color: #B2DAFF;
     border: 1px solid #1991FF;
@@ -233,3 +234,4 @@ border-radius: 16px; */
     width: 100%;
     display: block;
 }
+

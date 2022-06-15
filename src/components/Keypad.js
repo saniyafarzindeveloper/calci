@@ -1,5 +1,5 @@
 import React from "react";
-import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
+//import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
 import { useState } from "react";
 import btnList from "./btnMapper";
 
@@ -23,13 +23,12 @@ export default function Keypad({ setter }) {
     <div className="keypad">
       {btnList.map((btnObj, index) => (
         <button
-          className={btnObj.type}
+          className={btnObj.type} 
           onClick={() => {
             return setter(btnObj.content);
           }}
-          key={index}>
-          {btnObj.content}
-        </button>
+          key={index}>{btnObj.content}
+          </button>
       ))}
     </div>
   );
