@@ -13,13 +13,18 @@ export default function App() {
   const ops = ['/' , '+' , '-' , '*'];
 
   const updateCalc = value => {
+    //if the last value is an operator & the calculator is null
     if (ops.includes(value) && inputValue === '' ||
+    //if the calculator has some values but the last value was also an operator
         ops.includes(value) && ops.includes(inputValue.slice(-1))) {
+      //setting the above flag will limit the operators being used after an immediate operator
       return;
     }
     setInputValue(inputValue + value);
 
+    //if the last value was not an operator
     if (!ops.includes(value)) {
+      //implementing the eval function
       setInputValue(eval(inputValue + value).toString());
     }
 
