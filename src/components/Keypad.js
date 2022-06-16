@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import btnList from "./btnMapper";
 
 export default function Keypad({ setter }) {

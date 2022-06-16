@@ -6,12 +6,15 @@ import Keypad from "./Keypad";
 //useEffect will tell what should be done after the DOM is rendered. useEffect works only with FUNCTIONAL 
 //components. It should be declared at the start of the component.
 
-
+//
 export default function App() {
   const [inputValue, setInputValue] = useState("");
+  const [result, setResult] = useState("");
   const [btnClick, setbtnClick] = useState("");
   const ops = ['/' , '+' , '-' , '*'];
 
+
+  //implementing the eval function
   const updateCalc = value => {
     //if the last value is an operator & the calculator is null
     if (ops.includes(value) && inputValue === '' ||
@@ -25,13 +28,22 @@ export default function App() {
     //if the last value was not an operator
     if (!ops.includes(value)) {
       //implementing the eval function
-      setInputValue(eval(inputValue + value).toString());
+      setResult (eval(inputValue + value).toString());
     }
 
+    //equal to button functioning
+    const equal = () =>{
+      setbtnClick(eval(btnClick).toString());
+    }
   }
 
   useEffect(() => {
     if ("0123456789.".includes(btnClick))
+      setInputValue((prev) => prev + btnClick);
+  }, [btnClick]);
+
+  useEffect(() => {
+    if ("+ - * /".includes(btnClick))
       setInputValue((prev) => prev + btnClick);
   }, [btnClick]);
 
