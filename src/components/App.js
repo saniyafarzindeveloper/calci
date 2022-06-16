@@ -10,6 +10,20 @@ import Keypad from "./Keypad";
 export default function App() {
   const [inputValue, setInputValue] = useState("");
   const [btnClick, setbtnClick] = useState("");
+  const ops = ['/' , '+' , '-' , '*'];
+
+  const updateCalc = value => {
+    if (ops.includes(value) && inputValue === '' ||
+        ops.includes(value) && ops.includes(inputValue.slice(-1))) {
+      return;
+    }
+    setInputValue(inputValue + value);
+
+    if (!ops.includes(value)) {
+      setInputValue(eval(inputValue + value).toString());
+    }
+
+  }
 
   useEffect(() => {
     if ("0123456789.".includes(btnClick))
