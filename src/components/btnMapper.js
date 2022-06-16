@@ -15,7 +15,7 @@ const btnMapper = [
     },
     {
         content: "()",
-        type: "trigo"
+        type: "paran"
     },
     {
         content: "AC",

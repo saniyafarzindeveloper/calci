@@ -10,9 +10,10 @@ export default function Keypad({ setter }) {
         <button
           className={btnObj.type} 
           onClick={() => {
-            return setter(btnObj.content);
+            return setter(btnObj);
           }}
-          key={index}>{btnObj.content}
+          key={index}>
+          {btnObj.content}
           </button>
       ))}
     </div>
